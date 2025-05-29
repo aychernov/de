@@ -1,11 +1,82 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <header>
+    <h1>Изучение Data Engineer с нуля</h1>
+  </header>
+  <div class="container">
+    <p>
+      Хотите освоить профессию Data Engineer? Этот путь может показаться
+      сложным, но с правильным подходом и поддержкой вы сможете достичь своей
+      цели!
+    </p>
+    <p>Мы создали специальный Telegram-чат, где вы сможете:</p>
+    <ul>
+      <li>Общаться с единомышленниками</li>
+      <li>Делиться опытом и знаниями</li>
+      <li>Находить менторов и партнёров для проектов</li>
+      <li>Получать мотивацию и поддержку</li>
+    </ul>
+    <p>
+      Надеемся, что нетворк в этой группе поможет нам достичь цели быстрее и
+      главное — с интересом!
+    </p>
+    <a href="https://t.me/+hD_sxJV1a-g0OTA6" target="_blank"
+      >Присоединиться к чату</a
+    >
+  </div>
+  <footer>&copy; 2023 Изучение Data Engineer с нуля</footer>
 </Layout>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  a:hover {
+    background-color: #45a049;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+</style>
